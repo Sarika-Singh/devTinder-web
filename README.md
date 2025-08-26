@@ -1,12 +1,47 @@
-# React + Vite
+# DevTinder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Create a Vite + React Application
+- Remove unecessary code and create a Hello World App.
+- Install tailwind css
+- Install Daisy UI
+- Add NavBar component to App.jsx
+- Create a NavBar.jsx separate
+- Install react router dom
+- Create BrowserRouter > Routes > Route=/ Body > RouteChildren
+- Create an Outlet in your Body Component
+- Create a Footer
+- Create A Login Page
+- Install Axios
+- CORS -- install cors in backend ==> add middleware to app with configuration : origin, credentials=true
+- Whenever making api call so pass {withCredential : true} in axios
+- Install Redux Toolkit - documentation
+- Install react-redux + redux toolkit both
+- configureStore = > Provider => createSlice => add reducer to store
+- Add redux devtools in chrome
+- Login and see if your data is coming properly in the store
+- Navbar should update as soon as user logs in
+- Refractor our code to add constants file + create a component folder
+- You should not ne able to access routes without login
+- If token is not present, redirect user to login page
+- Logout
+- Profile
+- get the feed and add the feed in the store
+- Build the used card on feed
+- Edit Profile BUild
+- Toast msg on save
+- See all my connections
+- New page - to see all my Connection Requests.
+- Feature - Accept/Reject Connection Request
 
-Currently, two official plugins are available:
+Remaining :
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Send/Ignore the user card from Feed
+- Signup New User
+- E2Etesting
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+BODY
+NAVBAR
+Route=/ => Feed
+Route=/login => Login
+Route=/connections => Connections
+Route=/profile => Profile
