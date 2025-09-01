@@ -136,3 +136,17 @@ AWS :
     - Write code for SESClient
     - Write code for Sending email address
     - Make the email dynamic by passing more params to the run function.
+
+
+# Scheduling cron jobs in NodeJS
+
+    - Installing node-cron
+    - Learning about cron expression syntax ---crontab.guru
+    - Schedule a JOb
+    - date-fns
+    - Find all the unique email ID who have got connection Request in previous day
+    - Send Email
+    - Explore queue mechanism to send bulk emails
+    - Amazon SES Bulk Emails
+    - Make sendEmail function dynamic or template based.
+    - bee-queue & bull npm packages.
