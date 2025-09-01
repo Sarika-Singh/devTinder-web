@@ -71,7 +71,7 @@ AWS :
             - sudo systemctl enable nginx --- (To enable the nginx)
             - Copy code from dist(build files) to /var/www/html/
                -Command  -- sudo scp -r dist/* /var/www/html
-            - Enable port 80 on your instance
+            - Enable port :80 on your instance
 
         - Backend :
             - Allow EC2 Instance public IP on mongodb server
@@ -108,3 +108,31 @@ AWS :
                     proxy_set_header Host $host;
                     proxy_cache_bypass $http_upgrade;
                 }
+
+
+# Adding a custom Domain Name :
+
+    - Purchase domain name from godaddy
+    - signup on cloudfare add a new domain name
+    - change the nameservers on godaddy and point it to cloudfare
+    - wait for some time till your nameservers are updated.
+    - DNS record -- A record -- <domain name> -- <Your IP Address> - On Cloudfare
+    - Enable SSL for website -- On Cloudfare
+
+
+# Sending Emails via SES
+
+    - Create a IAM user
+    - Give Access to AmazonSESFullAccess
+    - Amazon SES : Craete an Identity in SES
+    - Verify your Domain Name 
+    - Verify an email Address
+    - Install AWS SDK - v3
+    - Code example -https://github.com/awsdocs/aws-doc-sdk-examples/blob/main/javascriptv3/example_code/ses/src/ses_sendemail.js#L16
+
+    - Setup SesClient
+    - Access Credentials should be created in IAM under SecurityCrediamtials Tab
+    - Add the credentials to the env file
+    - Write code for SESClient
+    - Write code for Sending email address
+    - Make the email dynamic by passing more params to the run function.
