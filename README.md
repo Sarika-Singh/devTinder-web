@@ -150,3 +150,35 @@ AWS :
     - Amazon SES Bulk Emails
     - Make sendEmail function dynamic or template based.
     - bee-queue & bull npm packages.
+
+
+# Razorpay Payment Gateway Integration :
+
+    - Create your account on Razorpay.
+    - Created a UI for premium page.
+    - Creating api for Create Order.
+    - added key and secret in env file
+    - Initialized Razorpay in utils
+    - creating order on Razorpay
+    - create schema and model
+    - saved the order in payment collection
+    - make the API dynamic
+    - Create webhooks in Razorpay dashboard using LIVE API (localhost will not work in webhooks)
+    - Refer webhooks razorpay documentation
+
+
+# Real Time Chat using Websocket(socket.io)
+    - Build the UI for a chat window on /chat/:targetUserId
+    - Setup socket.io in backend
+    - npm i socket.io
+    - Setup Frontend socket.io-client
+    - Initialize the chat
+    - createSocketConnection
+    - Listen events
+    - Homework - Fix Security bug (Cn I send messages to a person who is not my friend)  -- auth in web sockets
+    - Homework - If i am not friend then i should not be able to send messages.
+    - Homework - Build a feature for online green dot and last seem 2 hours ago.
+    - Homework - Limit messages when fetching from DB. (Load while scrolling feature)
+    - Project Ideas : Tic tac toe game
+    - Project Idea 2 : Chess game
+    - Project Idea 3 : Type Racer
